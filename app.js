@@ -24,9 +24,9 @@ printOdds(10);
 
 // exercise 2: Check Age
 
-function checkAge(name,age){
+const checkAge = (name,age) => {
 let oldEnoughMsg = `Congrats ${name}! You can drive!`;
-let tooYoungMsg = `Sorry ${name}, you need to wait ${""} year(s) until you can drive`;
+let tooYoungMsg = `Sorry ${name}, you need to wait ${16 - age} year(s) until you can drive!`;
 
 
 if (age < 16) {
@@ -36,7 +36,7 @@ if (age < 16) {
 }
 
 
-}
+};
 
 
 checkAge("Ben",12);
@@ -78,12 +78,12 @@ console.log(checkQuadrant(0,0));
 
 // exercise 4: Traingles
 
-function isValidTraingle(a,b,c) {
+function isValidTriangle(a,b,c) {
 
     return a + b > c && a + c > b && b + c > a;
 }
 
-function checkTraingle(a,b,c) {
+function checkTriangle(a,b,c) {
  let isValid = isValidTriangle(a,b,c);
  if (isValid) {
     // What type of triangle?
@@ -134,7 +134,7 @@ statusMsg = "Exceeding";
 
 
  console.log(`${day} days used , ${periodLength - day} days remaining`);
- console.log(`Average projected use: ${plantLimit / periodLength} GB/day`);
+ console.log(`Average projected use: ${planLimit / periodLength} GB/day`);
  console.log(`You are exceeding your daily use (${currentAvg} GB/day), coninuting this 
  you will exceed your GB by 11.9 GB `);
 
