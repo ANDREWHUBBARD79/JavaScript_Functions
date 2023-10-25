@@ -116,9 +116,9 @@ console.log(checkTriangle(1,1,2)); // invalid
 const dataUsageFeedback = (planLimit, day, usage) => {
  let periodLength = 30;
  let currentAvg = usage / day;
- let projectedAvg = plantLimit / periodLength;
+ let projectedAvg = planLimit / periodLength;
  let remainingDays = periodLength -day;
- let remainData = plantLimit - usage; 
+ let remainData = planLimit - usage; 
  let projectedUsage = remainingDays * currentAvg;
  let statusMsg;
 
