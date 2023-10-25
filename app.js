@@ -101,7 +101,7 @@ function checkTriangle(a,b,c) {
 
 console.log(checkTriangle(2,3,4)); //scalene
 console.log(checkTriangle(2,2,2)); //eq
-console.log(checkTraingle(1,2,2)); // iscosceles
+console.log(checkTriangle(1,2,2)); // iscosceles
 console.log(checkTriangle(1,1,2)); // invalid
 
 
